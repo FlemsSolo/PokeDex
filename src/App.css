@@ -1,0 +1,163 @@
+* {  box-sizing: border-box; }
+
+body { 
+  width: 100%; height: 100%;
+  overflow: hidden;
+  position: absolute;
+  font-size: 12px ;
+  line-height: 12px;
+  font-family: sans-serif;  padding: 0;
+  color: #f0f0f0 ; background: #0f0f0f;
+  }
+
+#MyRoot
+  {
+  display: flex;
+  width: 100%;height: calc(100% - 10px);
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  }
+
+#Menu, #NavButs
+  {
+  width: 90%; 
+  display: flex ; margin:4px;
+  font-size: 18px ;
+  line-height: 18px;
+  }
+
+#Menu
+  {
+  width: 90%;
+  justify-content:space-around;
+  border:1px solid #808080; background-color: blueviolet;
+  }
+
+#Menu .NavBut
+  {
+  width: 90%; 
+  padding: 4px;
+  text-decoration-line: none;
+  }
+
+#Menu .NavBut:hover
+  {
+  width: 90%; 
+  color: #FFF ;background-color: darkorange;
+  cursor:pointer;
+  }
+
+ #NavButs
+  {
+  justify-content:center; margin-bottom: 16px;
+  font-size: 18px ;
+  }
+
+ #NavButs span, #NavButs a
+  {
+  aborder:1px solid #808080;
+  margin:4px;padding:4px;
+  text-decoration: none;
+  }
+
+ #PokeSquare
+  {
+  display: flex; 
+  width: 95%; height:90% ;
+  flex-wrap: wrap ; justify-content:center;
+  overflow-y: auto;
+  }
+
+.CardClass
+  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis:8% ; 
+  margin:4px;padding:4px;
+  border:2px solid #808080;
+  border-radius: 4px;
+  cursor:pointer;
+  }
+
+.CardClass:hover
+  {
+  border:2px solid #f0f0f0;
+  }
+
+.CardClass img
+    {
+    align-self: center;
+    }
+
+.CardClass img:hover
+    {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.WaitClass
+  {
+  display: flex ;
+  width: 100% ; height: 100% ;
+  font-size: 32px;
+  margin: auto ;
+  text-align: center;
+  padding-top: 10px ;
+  aborder:1px solid #808080;
+  }
+
+.WaitClass > div
+  {
+  width: 95%; height:90% ;
+  display: flex; flex-wrap: wrap ; justify-content:center;
+  padding-top: 25% ;
+  overflow-y: auto;
+  }
+
+.PokeInfoClass
+  {
+  awidth: 100% ; aheight: 100% ;
+  text-align: left ;
+  font-size: 32px;
+  line-height: 32px ;
+  padding: 10px ;
+  padding-top: 12%;
+  border:1px solid #808080;
+  }
+
+.NavBut:hover
+  {
+  cursor:pointer;
+  }
+
+.pokeName
+  {
+  display: inline-block;
+  font-size:12px ;
+  height: 38px ;
+  }
+
+.modal
+  {
+  width: 600px ;
+  text-align: center;
+  background: #f0f0f0 ;
+  border:1px solid #808080;
+  }

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  react-app:
+    build: .
+    ports:
+      - "5173:5173" # Map container's 5173 (2 parm)  to host's 5173 (1 parm)
+    volumes:
+      - .:/app
+      - /app/node_modules # Prevents local node_modules from mounting
+    stdin_open: true
+    tty: true
