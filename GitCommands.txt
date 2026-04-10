@@ -1,0 +1,3 @@
+git init # Only First Time !
+git add -A # Add All Files
+git commit -m 'PokeDev First Commit' # Commit To git
