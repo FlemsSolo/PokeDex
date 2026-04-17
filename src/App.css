@@ -153,11 +153,3 @@ body {
   font-size:12px ;
   height: 38px ;
   }
-
-.modal
-  {
-  width: 600px ;
-  text-align: center;
-  background: #f0f0f0 ;
-  border:1px solid #808080;
-  }
