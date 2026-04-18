@@ -187,8 +187,8 @@ function PokeGallery(props)
               <div><b>Type:</b> {LeImg.TypeStr}</div>
               <div><b>Abilities:</b> {LeImg.AbilStr}</div>
             </div>
-            <div style={{ marginTop: '12px' }}>
-              <button onClick={() => setOpen(false)}>Close</button>
+            <div style={{ marginTop: '12px', textAlign: 'center' }}>
+              <button onClick={() => setOpen(false)} style={{ marginTop: '12px', background: 'none' }}>Close</button>
             </div>
           </div>
         </Modal>
