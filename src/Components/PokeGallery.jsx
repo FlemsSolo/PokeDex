@@ -291,7 +291,7 @@ FetchAllPokes(CurPoke, setMaxPokes, abortController)
     else
       effect = "None" ;*/
 
-    img = (img === null ? '/src/assets/PokemonLogo.png' : img) ;
+    img = (img === null ? './images/PokemonLogo.png' : img) ;
 
     // Make Abilities String
     let AbilStr = "" ;
